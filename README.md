@@ -35,11 +35,16 @@ The final data frame is then exported as a JSON, and read by the HTML, CSS, and 
 # More Info
 
 ## Next Steps
+
+Theses are some ideas for expansion of the project:
+
 Honestly, more papers there are [wayyyy more papers](https://www.google.com/search?q=how+many+papers+are+on+arxiv) on arXiv, this is just the first 10,000. Additionally there are millions more papers in general. I probbaly need more time, less API rate limits, and more computing power, and probably more experience webdeving to get even close to that number of papers on the site. 
 
 Maybe move away from the 3D-Force-Graph, I imagine there is some overhead that could be optimized with just raw three.js.
 
 It maybe possible to visualize what topics are researched as time goes on, that would be pretty cool.
+
+If there was a way to programmatically obtain related papers and citations, you could make this more graph like. 
 
 ## Pitfalls
 A pitfall I identify is that the embeddings are made using the title + abstract in raw string form, although some abstracts describe the paper great, some...not so much. The embeddings of these less ideal abstracts create a less then ideal embedding.
