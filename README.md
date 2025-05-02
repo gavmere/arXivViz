@@ -42,7 +42,9 @@ It maybe possible to visualize what topics are researched as time goes on, that 
 ## Pitfalls
 A pitfall I identify is that the embeddings are made using the title + abstract in raw string form, although some abstracts describe the paper great, some...not so much. The embeddings of these less ideal abstracts create a less then ideal embedding.
 
-The data only goes up to like late 2007 I think. Bruh.
+Client-side rendering is tough, so it can be really slow depending on alot of factors.
+
+The data only goes up to like late 2007 I think, this goes back to next steps.
 
 # Conclusion
 I hope you have fun with this, it's was pretty fun(strating) to make. Please explore and find some interesting things.
