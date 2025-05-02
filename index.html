@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D UMAP Visualization - Selectable KMeans</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="//unpkg.com/3d-force-graph"></script>
+</head>
+<body>
+    <p id="loading-warning" style="font-size: small; text-align: center; color: #888;">Warning: May lag for a couple of seconds when loading.</p>
+    <div id="controls">
+        <label for="cluster-selector">Select Clustering:</label>
+        <select id="cluster-selector" disabled>
+            <option value="">Loading...</option>
+        </select>
+        <span style="font-style: italic; color: #999; margin-left: auto; padding-right: 10px;">Hover nodes for details. Scroll to zoom, drag to rotate, Click nodes for paper.</span>
+    </div>
+    <div id="graph-container">
+        <div id="loading">Loading Data...</div>
+        <div class="info" id="legend">
+            <h3>Cluster Legend</h3>
+            <div id="legend-items">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+
+        setTimeout(() => {
+            const warningElement = document.getElementById('loading-warning');
+            if (warningElement) {
+                warningElement.style.display = 'none';
+            }
+        }, 15000); 
+    </script>
+</body>
+</html>
