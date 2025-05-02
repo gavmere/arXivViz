@@ -32,5 +32,17 @@ The high-dimensional (256 dimensions) embeddings are reduced to 3 dimensions for
 
 The final data frame is then exported as a JSON, and read by the HTML, CSS, and JS. TBH [The 3D-Force-Graph](https://github.com/vasturiano/3d-force-graph?tab=readme-ov-file) Libray does most of the work, I just read the data I created. I also did some 'prompt engineering' as they would say for help on the webdev stuff, again, I'm a data scientist what do I know about that ¯\_(ツ)_/¯. 
 
+# More Info
+
+## Next Steps
+Honestly, more papers there are [wayyyy more papers](https://www.google.com/search?q=how+many+papers+are+on+arxiv) on arXiv, this is just the first 10,000. Additionally there are millions more papers in general. I probbaly need more time, less API rate limits, and more computing power, and probably more experience webdeving to get even close to that number of papers on the site. 
+
+It maybe possible to visualize what topics are researched as time goes on, that would be pretty cool.
+
+## Pitfalls
+A pitfall I identify is that the embeddings are made using the title + abstract in raw string form, although some abstracts describe the paper great, some...not so much. The embeddings of these less ideal abstracts create a less then ideal embedding.
+
+The data only goes up to like late 2007 I think. Bruh.
+
 # Conclusion
 I hope you have fun with this, it's was pretty fun(strating) to make. Please explore and find some interesting things.
