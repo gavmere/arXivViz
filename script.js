@@ -1,5 +1,5 @@
 // --- Configuration ---
-const pointsDataPath = '/data/data.json';
+const pointsDataPath = 'data/data.json';
 const coordXField = 'umap_x';
 const coordYField = 'umap_y';
 const coordZField = 'umap_z';
